@@ -29,8 +29,8 @@ own needs
     5. While `poetry-python` virtual-env is active, you can debug the function using `pnpm sst dev`
         1. Debugging `basic-python` function will ALSO work due to matching dependencies
 
-**NOTE:** Running the above steps creates a local `.venv` directory with installed dependencies, which gets included in
-the overall packages at deploy time via `pnpm sst deploy --stage=prod` increasing the total package size. If package
+**NOTE:** Running the above steps create local `.venv` directories with installed dependencies. These get included at
+deploy time (`pnpm sst deploy --stage=prod`) increasing the total package size. If package
 size is a concern, either:
 
 1) create `.venv` somewhere else OR
